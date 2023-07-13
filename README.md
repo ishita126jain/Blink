@@ -52,7 +52,8 @@ Record the coordinates of the Pupil and will keep tracking the Pupil and will sy
 
 In this project we use the right eye of a person for cursor movement. 
 
-
+<a href="https://drive.google.com/file/d/1VhMnyd3KIlYgdFbEiDViEgSsNx_lv5sz/view?usp=drive_link">Gaze Tracking</a>
+<br><br>
 <b>Cursor Movement</b>
 
 The input of eye movement is taken from the individual's pupil. If a person looks at a center mouse pointer, that point would be taken as the input point and it sets that location as the basis for gaze tracking and it begins moving in the direction of the person's eye movement and the cursor stops moving when the person's eye hits its initial place.
@@ -67,7 +68,30 @@ PyautoGUI is used in this project for cursor movement .It tracks and controls th
 Horizontal eye pupil movement can be achieved using circular artifacts. If the pupil moves in the left direction, the mouse pointer moves in the left direction as well, and the same happens in the right direction as well, 
 
 
-<b>2. Up and down movement of the pupil<b>
+<b>2. Up and down movement of the pupil</b>
 
 Vertical eye pupil movement can be achieved by using pupil scale. The eyes are in a slightly half-closed state when gazing downwards. This phenomenon can be used to guide the step from top to bottom of the mouse pointer.
+<br><br>
+<a href="https://drive.google.com/file/d/1VZGJebuj9eBT_IAibpDlAJpSXboM9dLR/view?usp=drive_link">Cursor Movement</a>
+</p>
+<p><h3>6. Blink Detection & Click Event</h3>
+
+<b>Blink Detection</b>
+
+Blinking which is one of the easiest eye movements to detect and has numerous applications in the fields of human computer interaction. Blinking can be involuntary or voluntary.
+
+Voluntary blinking can be used as a means of communication. The interface to a computing device has traditionally been a keyboard or a mouse, and more recently, a touchscreen. If blinking can be detected, it can serve as an additional interface, with appropriate responses for a specified action.
+
+There have been many approaches to detecting blinks. In this project we use only two landmarks of the person’s right eye for blink detection. When a person blinks his/her eye both the landmarks overlap each other so as this application runs continuously, simultaneously it calculates differences between both the landmarks, and when difference goes to zero this means the person blinks his/her eye.
+
+<b>Click Event</b>
+
+Now, the blink of the eye will be used to select the stuff as it was done with the mouse clicks.
+
+The average time of a complete human blink is about 300 to 400 milliseconds or 3/10ths to 4/10ths of a second. Of course this is an average only and can differ from person to person. So to perform clicking operations, the user has to blink with one eye for at least 700 to 800 milliseconds.
+
+Thus, mouse clicking is managed by the eyes blinking. PyautoGUI can also perform click operation which is used in this project.
+
+In this project we use the left eye of a person for a click event. 
+
 </p>
